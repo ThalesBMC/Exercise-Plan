@@ -21,4 +21,5 @@
                 <button onClick={setMinusAbs}> - </button>
                 <button onClick={setPlusAbs}> + </button>
             </div>
+            <strong>Dias totais : {diasTotais}</strong>
         </div>

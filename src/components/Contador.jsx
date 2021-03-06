@@ -5,7 +5,7 @@ import {ContadorContext} from "./ContadorDeDias"
 export function Contador()
 
     { 
-    const{diaFlexao, diaAbs, diaBarra, setPlusAbs,setMinusAbs, setPlusFlexao, setMinusFlexao, setPlusBarrao, setMinusBarra} = useContext(ContadorContext)
+    const{diasTotais,diaFlexao, diaAbs, diaBarra, setPlusAbs,setMinusAbs, setPlusFlexao, setMinusFlexao, setPlusBarrao, setMinusBarra} = useContext(ContadorContext)
     return(
         <div className={styles.contador}>
                     
@@ -30,6 +30,7 @@ export function Contador()
                         <button onClick={setMinusBarra}> - </button>
                         <button onClick={setPlusBarrao}> + </button>
                     </div>
+                    <strong>Dias totais : {diasTotais}</strong>
                 </div>
     )
  }
