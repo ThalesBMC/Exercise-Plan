@@ -41,7 +41,6 @@ export function ContadorProvider({children,...rest}) {
 
     function setPlusAbs(){
         setDiaAbs(diaAbs + 1);
-        setDiasTotais(diasTotais + 1)
     }
     return(
        <ContadorContext.Provider value={{
