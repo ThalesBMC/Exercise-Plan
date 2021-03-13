@@ -10,10 +10,10 @@ export function ContadorProvider({children,...rest}) {
     const [diaAbs, setDiaAbs] = useState(rest.diaAbs ?? 0);
     const[diasTotais, setDiasTotais] = useState(rest.diasTotais ?? 0)
     useEffect(()=>{
-        Cookies.set('diaFlexao', String(diaFlexao));
-        Cookies.set('diaBarra', String(diaBarra));
-        Cookies.set('diaAbs', String(diaAbs));
-        Cookies.set('diasTotais', String(diasTotais));
+        Cookies.set('diaFlexao', String(diaFlexao),  { expires: 365 });
+        Cookies.set('diaBarra', String(diaBarra), { expires: 365 });
+        Cookies.set('diaAbs', String(diaAbs), { expires: 365 });
+        Cookies.set('diasTotais', String(diasTotais), { expires: 365 });
     },[diaFlexao, diaBarra, diaAbs])
 
     function setMinusFlexao(){
