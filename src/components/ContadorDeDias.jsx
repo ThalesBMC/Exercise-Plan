@@ -42,13 +42,16 @@ export function ContadorProvider({children,...rest}) {
     function setPlusAbs(){
         setDiaAbs(diaAbs + 1);
     }
+    function setDiasTot(){
+        setDiasTotais(diasTotais - 1)
+    }
     return(
        <ContadorContext.Provider value={{
            setMinusFlexao, setPlusFlexao, 
            setMinusBarra,setPlusBarrao, 
            setMinusAbs, setPlusAbs, 
            diaFlexao, diaAbs, diaBarra,
-           diasTotais
+           diasTotais, setDiasTot
        }}>
         {children}
        </ContadorContext.Provider>
