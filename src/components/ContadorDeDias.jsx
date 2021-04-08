@@ -18,7 +18,7 @@ export function ContadorProvider({children,...rest}) {
 
     function setMinusFlexao(){
         setDiaFlexao(diaFlexao - 1);
-        setDiasTotais(diasTotais - 1);
+        
     }
 
     function setPlusFlexao(){
@@ -28,7 +28,7 @@ export function ContadorProvider({children,...rest}) {
     }
     function setMinusBarra(){
         setDiaBarra(diaBarra - 1);
-        setDiasTotais(diasTotais - 1)
+      
     }
 
     function setPlusBarrao(){
